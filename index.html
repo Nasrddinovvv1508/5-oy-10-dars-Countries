@@ -109,9 +109,10 @@
                 <label for="searchCountry">
                     <img src="./src/img/search.svg" alt="search icon">
                 </label>
-                <input class="h-6 focus:outline-none text-slate-600" type="text" placeholder="Search for a country…"
-                    id="searchCountry">
+                <input id="price" class="w-full h-6 focus:outline-none text-slate-600" type="text"
+                    placeholder="Search for a country…" id="searchCountry">
             </div>
+
             <label class="select" for="slct">
                 <select id="slct" required="required">
                     <option value="" disabled="disabled" selected="selected">Filter by Region</option>
@@ -125,12 +126,14 @@
                     <use xlink:href="#select-arrow-down"></use>
                 </svg>
             </label>
-            <!-- SVG Sprites-->
-            <svg class="sprites">
-                <symbol id="select-arrow-down" viewbox="0 0 10 6">
-                    <polyline points="1 1 5 5 9 1"></polyline>
-                </symbol>
-            </svg>
+        </div>
+
+        <!-- SVG Sprites-->
+        <svg class="sprites">
+            <symbol id="select-arrow-down" viewbox="0 0 10 6">
+                <polyline points="1 1 5 5 9 1"></polyline>
+            </symbol>
+        </svg>
         </div>
 
         <div class="speacial-container country_cards mt-12 flex flex-wrap gap-14">

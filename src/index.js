@@ -1,5 +1,7 @@
 // https://restcountries.com/v3.1/all
+// Elements
 let countryCards = document.querySelector(`.country_cards`);
+let select = document.getElementById(`slct`);
 
 function getAPI() {
     fetch(`https://restcountries.com/v3.1/all`)
@@ -11,9 +13,9 @@ function getAPI() {
                 countryCards.innerHTML += createCard(countrie);
             });
         })
-}
+};
+getAPI();
 
-getAPI()
 
 function createCard(countrie) {
     return `
@@ -42,4 +44,5 @@ function createCard(countrie) {
         </div>
     </div>
     `
-}
+};
+
