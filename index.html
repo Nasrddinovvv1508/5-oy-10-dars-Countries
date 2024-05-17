@@ -12,6 +12,7 @@
         body {
             font-family: 'Nunito Sans', sans-serif;
             background-color: #fafafa;
+            transition: all 0.4s;
         }
 
         .speacial-container {
@@ -83,6 +84,10 @@
             pointer-events: none;
             user-select: none;
         }
+
+        .country_card {
+            min-width: 264px;
+        }
     </style>
     <title>All Countries</title>
 </head>
@@ -104,7 +109,8 @@
                 <label for="searchCountry">
                     <img src="./src/img/search.svg" alt="search icon">
                 </label>
-                <input class="h-6 focus:outline-none text-slate-600" type="text" placeholder="Search for a country…" id="searchCountry">
+                <input class="h-6 focus:outline-none text-slate-600" type="text" placeholder="Search for a country…"
+                    id="searchCountry">
             </div>
             <label class="select" for="slct">
                 <select id="slct" required="required">
@@ -127,10 +133,110 @@
             </svg>
         </div>
 
-        <div class="countrie_cards">
-            
+        <div class="speacial-container country_cards mt-12 flex flex-wrap gap-14">
+            <!-- <div class="country_card shadow-md rounded cursor-pointer hover:shadow-xl">
+                <img width="264" src="./src/img/1280px-Flag_of_Germany.svg-1.png" alt="countrie">
+                <div class="about pt-6 ps-6 pb-12">
+                    <h3 class="font-extrabold text-lg mb-4">Germany</h3>
+                    <p class="text-sm">
+                        <span class="font-semibold">
+                            Population:
+                        </span>
+                        <span class="font-light text-sm">81,770,900</span>
+                    </p>
+                    <p>
+                        <span class="font-semibold">
+                            Region:
+                        </span>
+                        <span class="font-light">Europe</span>
+                    </p>
+                    <p>
+                        <span class="font-semibold">
+                            Capital:
+                        </span>
+                        <span class="font-light">Berlin</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="country_card shadow-md rounded cursor-pointer hover:shadow-xl">
+                <img src="./src/img/1280px-Flag_of_Germany.svg-1.png" alt="countrie">
+                <div class="about pt-6 ps-6 pb-12">
+                    <h3 class="font-extrabold text-lg mb-4">Germany</h3>
+                    <p class="text-sm">
+                        <span class="font-semibold">
+                            Population:
+                        </span>
+                        <span class="font-light">81,770,900</span>
+                    </p>
+                    <p>
+                        <span class="font-semibold">
+                            Region:
+                        </span>
+                        <span class="font-light">Europe</span>
+                    </p>
+                    <p>
+                        <span class="font-semibold">
+                            Capital:
+                        </span>
+                        <span class="font-light">Berlin</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="country_card shadow-md rounded cursor-pointer hover:shadow-xl">
+                <img src="./src/img/1280px-Flag_of_Germany.svg-1.png" alt="countrie">
+                <div class="about pt-6 ps-6 pb-12">
+                    <h3 class="font-extrabold text-lg mb-4">Germany</h3>
+                    <p class="text-sm">
+                        <span class="font-semibold">
+                            Population:
+                        </span>
+                        <span class="font-light">81,770,900</span>
+                    </p>
+                    <p>
+                        <span class="font-semibold">
+                            Region:
+                        </span>
+                        <span class="font-light">Europe</span>
+                    </p>
+                    <p>
+                        <span class="font-semibold">
+                            Capital:
+                        </span>
+                        <span class="font-light">Berlin</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="country_card shadow-md rounded cursor-pointer hover:shadow-xl">
+                <img src="./src/img/1280px-Flag_of_Germany.svg-1.png" alt="countrie">
+                <div class="about pt-6 ps-6 pb-12">
+                    <h3 class="font-extrabold text-lg mb-4">Germany</h3>
+                    <p class="text-sm">
+                        <span class="font-semibold">
+                            Population:
+                        </span>
+                        <span class="font-light">81,770,900</span>
+                    </p>
+                    <p>
+                        <span class="font-semibold">
+                            Region:
+                        </span>
+                        <span class="font-light">Europe</span>
+                    </p>
+                    <p>
+                        <span class="font-semibold">
+                            Capital:
+                        </span>
+                        <span class="font-light">Berlin</span>
+                    </p>
+                </div>
+            </div> -->
         </div>
     </main>
+
+    <script src="./src/index.js"></script>
 </body>
 
 </html>
