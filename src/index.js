@@ -2,6 +2,7 @@
 // Elements
 let countryCards = document.querySelector(`.country_cards`);
 let select = document.getElementById(`slct`);
+let seachInput = document.getElementById(`seach`)
 
 function getAPI() {
     fetch(`https://restcountries.com/v3.1/all`)
@@ -46,3 +47,16 @@ function createCard(countrie) {
     `
 };
 
+function seachCountry() {
+    seachInput.addEventListener(`input`, function () {
+        fetch(`https://restcountries.com/v3.1/all`)
+            .then((data) => {
+                return data.json();
+            })
+            .then((countries) => {
+                
+            })
+    });
+}
+
+seachCountry();
